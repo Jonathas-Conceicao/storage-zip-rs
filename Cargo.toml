@@ -1,0 +1,12 @@
+[package]
+name = "storage_zip"
+version = "0.1.0"
+authors = ["Jonathas-Conceicao <jadoliveira@inf.ufpel.edu.br>"]
+edition = "2018"
+description = "Utility functions library for zipping Options and Results into tuples."
+homepage = "https://github.com/Jonathas-Conceicao/storage-zip-rs"
+repository = "https://github.com/Jonathas-Conceicao/storage-zip-rs"
+keywords = ["zip", "option", "result", "util", "functional"]
+categories = ["no-std"]
+
+[dependencies]

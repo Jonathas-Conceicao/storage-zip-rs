@@ -3,6 +3,8 @@ name = "storage_zip"
 version = "0.1.0"
 authors = ["Jonathas-Conceicao <jadoliveira@inf.ufpel.edu.br>"]
 edition = "2018"
+license = "MIT/Apache-2.0"
+
 description = "Utility functions library for zipping Options and Results into tuples."
 homepage = "https://github.com/Jonathas-Conceicao/storage-zip-rs"
 repository = "https://github.com/Jonathas-Conceicao/storage-zip-rs"

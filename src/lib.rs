@@ -1,3 +1,38 @@
+/*!
+This crate offers utility functions for zipping Options and Results into tuples.
+
+It is instead to be used when different actions yields Options or Results values but the program flow
+can only proceed if all of them are Some or Ok.
+When used with Result, it requires that all the Results being zipped have the same error type and
+it will evaluate to the first error or to the tuple with all the Ok values.
+
+With the crate you can do:
+
+```rust
+use storage_zip::OptionZip;
+
+let option_value_one = Some(0);
+let option_value_two = Some(5);
+
+let zipped_options = Option::zip(option_value_one, option_value_two);
+assert_eq!(zipped_options, Some((0, 5)));
+```
+
+The crate also provides zip functions with more arguments:
+
+```rust
+use storage_zip::ResultZip;
+use std::fs::File;
+use std::io;
+
+let f1 = File::open("file1");
+let f2 = File::open("file2");
+let f3 = File::open("file3");
+
+let zipped_result: Result<(File, File, File), io::Error> = Result::zip3(f1, f2, f3);
+```
+*/
+
 #![no_std]
 
 mod option_zip;

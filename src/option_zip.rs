@@ -23,6 +23,8 @@ macro_rules! match_args {
     };
 }
 
+/// Trait for using zip function on [Option](core::option::Option) type, import
+/// the trait and call it using `Option::zip` or any variant with more arguments
 pub trait OptionZip {
     zip_fn!(zip, [v1: T1, v2: T2]);
 

@@ -23,6 +23,8 @@ macro_rules! match_args {
     };
 }
 
+/// Trait for using zip function on [Result](core::result::Result) type, import
+/// the trait and call it using `Result::zip` or any variant with more arguments
 pub trait ResultZip {
     zip_fn!(zip, [v1: T1, v2: T2]);
 

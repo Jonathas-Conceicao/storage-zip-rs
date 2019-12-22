@@ -3,12 +3,16 @@
 
 # storage_zip
 
-This crate offers utility functions for zipping Options and Results into tuples.
+This crate offers utility functions for zipping `Option` and `Result`
+values into tuples.
 
-It is instead to be used when different actions yields Options or Results values but the program flow
-can only proceed if all of them are Some or Ok.
-When used with Result, it requires that all the Results being zipped have the same error type and
-it will evaluate to the first error or to the tuple with all the Ok values.
+This is intended to be used when different actions yields multiple
+`Option` or `Result` values but the program flow can only proceed if
+all of them are `Some` or `Ok`.
+
+When it is used with a `Result` based value, it requires that all the
+`Result` values being zipped have the same error type and it will
+evaluate to the first error or to the tuple with all the `Ok` values.
 
 With the crate you can do:
 

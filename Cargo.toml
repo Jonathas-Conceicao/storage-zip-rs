@@ -1,6 +1,6 @@
 [package]
 name = "storage_zip"
-version = "0.1.1"
+version = "0.1.2-alpha.0"
 authors = ["Jonathas-Conceicao <jadoliveira@inf.ufpel.edu.br>"]
 edition = "2018"
 license = "MIT/Apache-2.0"

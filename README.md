@@ -1,5 +1,5 @@
 [![Crates.io](https://img.shields.io/crates/v/storage-zip.svg)](https://crates.io/crates/storage-zip)
-[![Documentation](https://docs.rs/storage-zip/badge.svg)](https://docs.rs/storage-zip)
+[![Documentation](https://docs.rs/storage_zip/badge.svg)](https://docs.rs/storage_zip)
 
 # storage_zip
 
